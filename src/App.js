@@ -12,20 +12,20 @@ function App() {
     <div className="App">
       <div className="content">
         <Sidenav />
-        <div className="section">
-          <Home id="home" />
+        <div id="home" className="section">
+          <Home />
         </div>
-        <div className="section">
-          <FeaturedApps id="featured-apps" />
+        <div id="featured-apps" className="section">
+          <FeaturedApps />
         </div>
-        <div className="section">
-          <AboutMe id="about-me" />
+        <div id="about-me" className="section">
+          <AboutMe />
         </div>
-        <div className="section">
-          <OtherProjects id="other-projects" />
+        <div id="other-projects" className="section">
+          <OtherProjects />
         </div>
-        <div className="section">
-          <ContactMe id="contact-me" />
+        <div id="contact-me" className="section">
+          <ContactMe />
         </div>
       </div>
     </div>
