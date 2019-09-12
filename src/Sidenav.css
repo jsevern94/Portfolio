@@ -1,0 +1,18 @@
+.nav {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    background-color: #5a67d8;
+    padding: 10px;
+    padding-right: 35px;
+    margin-right: -35px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    transition: 0.3s;
+}
+.nav:hover {
+    background-color: #8d99ff;
+    margin-right: -20px;
+
+}

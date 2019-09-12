@@ -1,23 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Sidenav from './Sidenav'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Sidenav />
+        <div id="section1" className="filler">Home</div>
+        <div id="section2" className="filler">Featured Apps</div>
+        <div id="section3" className="filler">About Me</div>
+        <div id="section4" className="filler">Other Projects</div>
+        <div id="section5" className="filler">Contact Me</div>
       </header>
     </div>
   );
