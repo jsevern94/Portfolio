@@ -36,11 +36,11 @@ class Sidenav extends Component {
         }
         return (
             <div style={styles.sidenav}>
-                    <a href="#section1" className='nav' style={styles.nav}>Home</a>
-                    <a href="#section2" className='nav' style={styles.nav}>Featured Apps</a>
-                    <a href="#section3" className='nav' style={styles.nav}>About Me</a>
-                    <a href="#section4" className='nav' style={styles.nav}>Other Projects</a>
-                    <a href="#section5" className='nav' style={styles.nav}>Contact Me</a>
+                    <a href="#home" className='nav' style={styles.nav}>Home</a>
+                    <a href="#featured-apps" className='nav' style={styles.nav}>Featured Apps</a>
+                    <a href="#about-me" className='nav' style={styles.nav}>About Me</a>
+                    <a href="#other-projects" className='nav' style={styles.nav}>Other Projects</a>
+                    <a href="#contact-me" className='nav' style={styles.nav}>Contact Me</a>
             </div>
         )
     }
