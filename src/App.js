@@ -10,14 +10,24 @@ import ContactMe from './ContactMe';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="content">
         <Sidenav />
-        <Home id="home" className="filler"/>
-        <FeaturedApps id="featured-apps" className="filler"/>
-        <AboutMe id="about-me" className="filler"/>
-        <OtherProjects id="other-projects" className="filler"/>
-        <ContactMe id="contact-me" className="filler"/>
-      </header>
+        <div className="section">
+          <Home id="home" />
+        </div>
+        <div className="section">
+          <FeaturedApps id="featured-apps" />
+        </div>
+        <div className="section">
+          <AboutMe id="about-me" />
+        </div>
+        <div className="section">
+          <OtherProjects id="other-projects" />
+        </div>
+        <div className="section">
+          <ContactMe id="contact-me" />
+        </div>
+      </div>
     </div>
   );
 }

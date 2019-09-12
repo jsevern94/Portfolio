@@ -11,7 +11,7 @@ html {
   font-family: 'Walter Turncoat', serif;
 }
 
-.App-header {
+.content {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,6 @@ html {
   color: white;
 }
 
-.filler {
+.section {
   height: 100vh;
 }
