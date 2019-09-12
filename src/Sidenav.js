@@ -19,20 +19,7 @@ class Sidenav extends Component {
                 height: '85vh',
                 alignContent: 'space-between',
                 justifyContent: 'flex-end'
-            },
-
-            // nav: {
-            //     display: 'block',
-            //     color: '#fff',
-            //     textDecoration: 'none',
-            //     fontSize: '28px',
-            //     backgroundColor: '#5a67d8',
-            //     padding: '10px',
-            //     paddingRight: '25px',
-            //     marginRight: '-28px',
-            //     borderTopLeftRadius: '.8rem',
-            //     borderBottomLeftRadius: '.8rem'
-            // }
+            }
         }
         return (
             <div style={styles.sidenav}>
