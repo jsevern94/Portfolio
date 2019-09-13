@@ -21,19 +21,19 @@ class ProjectCard extends Component {
                 height: 'auto'
             },
             text: {
-                paddingTop: '1rem',
-                paddingBottom: '1rem',
                 paddingLeft: '1.5rem',
                 paddingRight: '1.5rem'
             },
             title: {
                 fontSize: '1.25rem',
                 marginBottom: '.5rem',
+                color: '#000',
                 fontWeight: '700'
             },
             description: {
                 fontSize: '1rem',
-                color: '#4a5568'
+                color: '#4a5568',
+                margin: 0
             },
             link: {
                 fontSize: '.875rem',

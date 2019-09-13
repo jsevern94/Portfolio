@@ -8,7 +8,7 @@ class Sidenav extends Component {
                 display: 'flex',
                 flexWrap: 'wrap',
                 zIndex: 20,
-                width: '240px',
+                width: '200px',
                 fontSize: '1.5rem',
                 position: 'fixed',
                 top: 0,
@@ -23,11 +23,11 @@ class Sidenav extends Component {
         }
         return (
             <div style={styles.sidenav}>
-                    <a href="#home" className='nav' style={styles.nav}>Home</a>
-                    <a href="#featured-apps" className='nav' style={styles.nav}>Featured Apps</a>
-                    <a href="#about-me" className='nav' style={styles.nav}>About Me</a>
-                    <a href="#other-projects" className='nav' style={styles.nav}>Other Projects</a>
-                    <a href="#contact-me" className='nav' style={styles.nav}>Contact Me</a>
+                    <a href="#home" className='nav swing-in-right-fwd1' style={styles.nav}>Home</a>
+                    <a href="#featured-apps" className='nav swing-in-right-fwd2' style={styles.nav}>Featured Apps</a>
+                    <a href="#about-me" className='nav swing-in-right-fwd3' style={styles.nav}>About Me</a>
+                    <a href="#other-projects" className='nav swing-in-right-fwd4' style={styles.nav}>Other Projects</a>
+                    <a href="#contact-me" className='nav swing-in-right-fwd5' style={styles.nav}>Contact Me</a>
             </div>
         )
     }

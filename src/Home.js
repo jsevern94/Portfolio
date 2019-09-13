@@ -4,7 +4,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                < div style={{ marginTop: '30px', fontSize: '3rem' }
+                < div style={{ marginTop: '30px', fontSize: '30px' }
                 }>
                     Home
                 </div>

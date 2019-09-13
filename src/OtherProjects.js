@@ -9,12 +9,12 @@ class OtherProjects extends Component {
                 alignItems: 'center',
                 display: 'flex',
                 flexWrap: 'wrap',
-                marginTop: '3rem',
+                marginTop: '30px',
             }
         }
         return (
             <div>
-                < div style={{ marginTop: '30px', fontSize: '3rem' }
+                < div style={{ marginTop: '30px', fontSize: '30px' }
                 }>
                     Other Projects
                 </div >
