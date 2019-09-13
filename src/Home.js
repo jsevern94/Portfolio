@@ -4,11 +4,11 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <img src='' />
-                < div style={{ marginTop: '30px' }}>
+                < div style={{ marginTop: '30px', fontSize: '3rem' }
+                }>
                     Home
                 </div>
-
+                <img src='' />
             </div>
         )
     }

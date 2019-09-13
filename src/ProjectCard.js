@@ -4,7 +4,8 @@ class ProjectCard extends Component {
     render() {
         const styles = {
             card: {
-                width: '20%'
+                width: '20%',
+                margin: '2.5rem'
             },
             content: {
                 backgroundColor: 'white',
@@ -52,18 +53,15 @@ class ProjectCard extends Component {
             <div style={styles.card} >
 
                 <div style={styles.content}>
-                    <img style={styles.image} src="assets/images/hello-world.PNG" alt="Hello World Homepage" />
+                    <img style={styles.image} src={this.props.image} alt="Hello World Homepage" />
                     <div style={styles.text}>
                         <div style={styles.title}>Hello World</div>
-                        <p style={styles.description}>
-                            For travelers who want to take a vacation but have no idea where they want to go. Tell us
-                            your ideal temperature, vacation theme and month, and we'll give you suggestions.
-                            </p>
+                        <p style={styles.description}>{this.props.children}</p>
                     </div>
                     <div style={styles.text}>
-                        <span style={styles.link}><a href="https://jsevern94.github.io/Hello-World/" rel="noopener noreferrer" target="_blank">Visit the
+                        <span style={styles.link}><a href={this.props.deployedLink} rel="noopener noreferrer" target="_blank">Visit the
                 page</a></span>
-                        <span style={styles.link}><a href="https://github.com/jsevern94/Hello-World" rel="noopener noreferrer" target="_blank">Check out the
+                        <span style={styles.link}><a href={this.props.code} rel="noopener noreferrer" target="_blank">Check out the
                 code</a></span>
                     </div>
                 </div>
