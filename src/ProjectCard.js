@@ -5,7 +5,8 @@ class ProjectCard extends Component {
         const styles = {
             card: {
                 width: '20%',
-                margin: '2.5rem'
+                margin: '2.5rem',
+                textAlign: 'left'
             },
             content: {
                 backgroundColor: 'white',
@@ -22,7 +23,8 @@ class ProjectCard extends Component {
             },
             text: {
                 paddingLeft: '1.5rem',
-                paddingRight: '1.5rem'
+                paddingRight: '1.5rem',
+                paddingBottom: '.75rem'
             },
             title: {
                 fontSize: '1.25rem',
@@ -36,7 +38,7 @@ class ProjectCard extends Component {
                 margin: 0
             },
             link: {
-                fontSize: '.875rem',
+                fontSize: '.75rem',
                 color: '#4a5568',
                 paddingLeft: '.75rem',
                 paddingRight: '.75rem',
@@ -55,7 +57,7 @@ class ProjectCard extends Component {
                 <div style={styles.content}>
                     <img style={styles.image} src={this.props.image} alt="Hello World Homepage" />
                     <div style={styles.text}>
-                        <div style={styles.title}>Hello World</div>
+                        <div style={styles.title}>{this.props.title}</div>
                         <p style={styles.description}>{this.props.children}</p>
                     </div>
                     <div style={styles.text}>
