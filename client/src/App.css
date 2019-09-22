@@ -2,13 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 .App {
-  text-align: center;
   background-image: url('background.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
-  font-family: 'Walter Turncoat', serif;
+  font-family: 'Vollkorn SC', serif;
 }
 
 .content {
@@ -18,9 +17,19 @@ html {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #1a202c;
 }
 
 .section {
   height: 100vh;
+  background-color: #e3e3e3;
+}
+
+.featured-apps {
+ color: #e3e3e3
+}
+
+.home {
+  height: 100vh;
+  background-color: #e3e3e3;
 }
