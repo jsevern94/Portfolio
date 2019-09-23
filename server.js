@@ -12,6 +12,11 @@ app.use(function (req, res, next) {
 
 const PORT = process.env.PORT || 3001;
 
+app.use(
+  bodyParser.urlencoded({
+      extended: true
+  })
+);
 app.use(bodyParser.json());
 
 app.use(mailPost)
