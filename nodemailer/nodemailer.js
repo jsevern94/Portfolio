@@ -6,7 +6,7 @@ const creds = require('../config/keys');
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
-    secure: false,
+    secure: true,
     auth: {
         user: creds.mailUser,
         pass: creds.mailPass,
