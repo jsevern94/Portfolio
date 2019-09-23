@@ -37,7 +37,7 @@ class ContactMe extends Component {
         }
         return (
             <div>
-                <h2 style={{ width: '80%', textAlign: 'center', margin: '0 auto', marginBottom: '20px', fontFamily: "'Nunito', sans-serif", color: '#bbdefb' }}>Send me a message if you'd like to get in touch</h2>
+                <h2 style={{ width: '80%', textAlign: 'center', margin: '0 auto', marginBottom: '20px', fontFamily: "'Nunito', sans-serif", color: '#1a202c' }}>Send me a message if you'd like to get in touch</h2>
                 <div className='container'>
                     <form id="contact-form" onSubmit={this.handleSubmit} method="POST">
                         <div className="form-group">
@@ -52,7 +52,7 @@ class ContactMe extends Component {
                             <label for="message">Message</label>
                             <textarea type="text" className="form-control" rows="5" id="message"></textarea>
                         </div>
-                        <button type="submit" className="btn btn-primary">Submit</button>
+                        <button type="submit" style={{  backgroundColor: '#1a202c', border: 'none', borderRadius: '.5rem', color: 'white', padding: '1rem', textAlign: 'center', textDecoration: 'none'}}>Submit</button>
                     </form>
                 </div>
             </div>
@@ -61,3 +61,7 @@ class ContactMe extends Component {
 }
 
 export default ContactMe;
+
+
+
+

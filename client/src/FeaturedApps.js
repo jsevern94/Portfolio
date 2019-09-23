@@ -18,9 +18,9 @@ class FeaturedApps extends Component {
         }
         return (
             <div style={{marginTop: '100px', marginBottom: '100px'}}>
-                <h3 style={{ marginBottom: '30px', fontSize: '30px', textAlign: 'center', margin: '0 auto', fontFamily: "'Nunito', sans-serif", backgroundColor: '#1a202c', padding: '1rem', borderRadius: '.5rem', width: '38%'}
+                <h3 style={{ marginBottom: '30px', fontSize: '30px', textAlign: 'center', margin: '0 auto', fontFamily: "'Nunito', sans-serif", backgroundColor: '#1a202c', padding: '1rem', borderRadius: '.5rem', width: '44%'}
                 }>
-                    Here are a few of the apps I've built.
+                    Here are a few of the apps I've worked on.
                 </h3>
                 <div style={styles.cards}>
                     <ProjectCard title='J-CARD Brewing Solutions' image='/images/J-card.PNG' deployedLink='https://shielded-retreat-69523.herokuapp.com/inventory' code='https://github.com/jsevern94/CRM'>A CRM designed for breweries in an effort to make the task of handling data easier. Utility and user-friendliness are the primary goals here, so expect regular updates and improvements.</ProjectCard>

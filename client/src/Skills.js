@@ -8,7 +8,7 @@ class Skills extends Component {
         }
         return (
             <div>
-                < h3 style={{ marginBottom: '30px', fontSize: '30px', textAlign: 'center', width: '80%', margin: '0 auto', fontFamily: "'Nunito', sans-serif" }
+                < h3 style={{ marginBottom: '30px', fontSize: '30px', color: '#bbdefb', textAlign: 'center', width: '80%', margin: '0 auto', fontFamily: "'Nunito', sans-serif" }
                 }>
                     These are some of the languages and technologies that I have experience with
                     </h3>

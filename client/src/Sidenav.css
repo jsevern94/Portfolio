@@ -1,10 +1,10 @@
 .nav {
     display: block;
-    color: #fff;
+    color: #1a202c;
     text-decoration: none;
     font-size: 20px;
     width: 150px;
-    background-color: #5a67d8;
+    background-color: #bbdefb;
     padding: 8px;
     padding-right: 35px;
     margin-right: -35px;
@@ -19,7 +19,7 @@
 }
 
 .nav:hover {
-    background-color: #2332b5;
+    background-color: #42a5f5;
     margin-right: -20px;
     box-shadow: -5px 10px 8px #1a202c;
 

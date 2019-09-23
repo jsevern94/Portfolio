@@ -11,16 +11,16 @@ function App() {
     <div className="App">
       <div className="content">
         <Sidenav />
-        <div id="about-me" className="home">
+        <div className="home">
           <AboutMe />
         </div>
-        <div id="featured-apps" className="featured-apps">
+        <div className="featured-apps">
           <FeaturedApps />
         </div>
-        <div id="skills" className="skills">
+        <div className="skills">
           <Skills />
         </div>
-        <div id="contact-me" className="section">
+        <div className="contact">
           <ContactMe />
         </div>
       </div>
