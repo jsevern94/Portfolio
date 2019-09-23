@@ -10,7 +10,7 @@ class ContactMe extends Component {
         const message = document.getElementById('message').value;
         axios({
             method: "POST",
-            url: "http://localhost:3001/send",
+            url: "https://fathomless-waters-64353.herokuapp.com/send",
             data: {
                 name: name,
                 email: email,
@@ -40,17 +40,17 @@ class ContactMe extends Component {
                 <h2 style={{ width: '80%', textAlign: 'center', margin: '0 auto', marginBottom: '20px', fontFamily: "'Nunito', sans-serif", color: '#1a202c' }}>Send me a message if you'd like to get in touch</h2>
                 <div className='container'>
                     <form id="contact-form" onSubmit={this.handleSubmit} method="POST">
-                        <div className="form-group">
+                        <div>
                             <label for="name">Name</label>
-                            <input type="text" className="form-control" id="name" />
+                            <input type="text" id="name" />
                         </div>
-                        <div className="form-group">
+                        <div>
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" className="form-control" id="email" aria-describedby="emailHelp" />
+                            <input type="email" id="email" aria-describedby="emailHelp" />
                         </div>
-                        <div className="form-group">
+                        <div>
                             <label for="message">Message</label>
-                            <textarea type="text" className="form-control" rows="5" id="message"></textarea>
+                            <textarea type="text" rows="5" id="message"></textarea>
                         </div>
                         <button type="submit" style={{  backgroundColor: '#1a202c', border: 'none', borderRadius: '.5rem', color: 'white', padding: '1rem', textAlign: 'center', textDecoration: 'none'}}>Submit</button>
                     </form>
