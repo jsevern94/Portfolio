@@ -4,16 +4,13 @@ var nodemailer = require('nodemailer');
 const creds = require('../config/keys');
 
 const transporter = nodemailer.createTransport({
-  host: "smtp-mail.outlook.com",
-  secureConnection: false,
-  port: 587,
-  auth: {
-      user: "severnj@spu.edu",
-      pass: "c1o2t3t4"
-  },
-  tls: {
-      ciphers:'SSLv3'
-  }
+    host: 'chi-node15.websitehostserver.net',
+    port: 465,
+    secure: true,
+    auth: {
+        user: creds.mailUser,
+        pass: creds.mailPass,
+    },
 });
 
 transporter.verify((error, success) => {
