@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(
   bodyParser.urlencoded({
-      extended: true
+    extended: true
   })
 );
 app.use(bodyParser.json());
@@ -22,10 +22,22 @@ app.use(bodyParser.json());
 app.use(mailPost)
 
 
-app.use(express.static(path.join(__dirname, '/client/public')));
-app.get("/*", function (req, res) {
-    res.sendFile(path.join(__dirname, "./client/public/index.html"));
-});
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+  // Add routes, both API and view
+  app.use(routes);
+  app.get("/*", function (req, res) {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  });
+}
 
+else {
+  app.use(express.static(path.join(__dirname, '/client/public')));
+  // Add routes, both API and view
+  app.use(routes);
+  app.get("/*", function (req, res) {
+    res.sendFile(path.join(__dirname, "./client/public/index.html"));
+  });
+}
 
 app.listen(PORT);
