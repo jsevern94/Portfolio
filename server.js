@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require("body-parser");
 const mailPost = require('./nodemailer/nodemailer');
+const path = require('path')
 const app = express();
 
 app.use(function (req, res, next) {
@@ -14,5 +15,12 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.json());
 
 app.use(mailPost)
+
+
+app.use(express.static(path.join(__dirname, '/client/public')));
+app.get("/*", function (req, res) {
+    res.sendFile(path.join(__dirname, "./client/public/index.html"));
+});
+
 
 app.listen(PORT);
