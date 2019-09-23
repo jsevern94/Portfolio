@@ -13,6 +13,7 @@ const transporter = nodemailer.createTransport({
 });
 
 transporter.verify((error, success) => {
+  console.log("here\nhere\nhere\nhere\nhere\nhere\nhere\nhere\nhere\nhere\nhere\nhere\nhere\nhere\nhere\nhere\nhere\nhere\n" + process.env.USER + process.env.PASS)
     if (error) {
         console.log(error);
     } else {
