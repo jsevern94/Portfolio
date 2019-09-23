@@ -6,8 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 class Sidenav extends Component {
     state = {
         start: true,
-        hidden: true,
-        svgColor: { color: 'black' }
+        hidden: true
     }
     handleClick = () => {
         this.setState({ hidden: !this.state.hidden, start: false })
@@ -42,18 +41,16 @@ class Sidenav extends Component {
                 <div className="flip-card">
                     <div className={this.state.hidden ? "flip-card-inner" : "flip-card-inner is-flipped"} onClick={this.handleClick}>
                         <div className="flip-card-front">
-                            <FontAwesomeIcon icon={faBars} size='2x' style={this.state.svgColor} />
+                            <FontAwesomeIcon icon={faBars} size='2x' style={{color: '#bbdefb'}}/>
                         </div>
                         <div className="flip-card-back">
-                            <FontAwesomeIcon icon={faTimes} size='2x' style={this.state.svgColor} />
+                            <FontAwesomeIcon icon={faTimes} size='2x' style={{color: '#bbdefb'}}/>
                         </div>
                     </div>
                 </div>
-                <p style={styles.nav}></p>
-                <a href="#about-me" className={this.state.start ? 'nav hidden' : this.state.hidden ? 'nav slide-out-blurred-right2' : 'nav swing-in-right-fwd2'}>About Me</a>
-                <a href="#featured-apps" className={this.state.start ? 'nav hidden' : this.state.hidden ? 'nav slide-out-blurred-right3' : 'nav swing-in-right-fwd3'}>Featured Apps</a>
-                <a href="#skills" className={this.state.start ? 'nav hidden' : this.state.hidden ? 'nav slide-out-blurred-right4' : 'nav swing-in-right-fwd4'}>Skills</a>
-                <a href="#contact-me" className={this.state.start ? 'nav hidden' : this.state.hidden ? 'nav slide-out-blurred-right5' : 'nav swing-in-right-fwd5'}>Contact Me</a>
+                <a href="https://github.com/jsevern94" rel="noopener noreferrer" target="_blank" className={this.state.start ? 'nav hidden' : this.state.hidden ? 'nav slide-out-blurred-right2' : 'nav swing-in-right-fwd2'}>GitHub</a>
+                <a href="https://www.linkedin.com/in/jonah-severn-12243aa5/" rel="noopener noreferrer" target="_blank" className={this.state.start ? 'nav hidden' : this.state.hidden ? 'nav slide-out-blurred-right3' : 'nav swing-in-right-fwd3'}>LinkedIn</a>
+                <a href="/images/resume.pdf" rel="noopener noreferrer" target="_blank" className={this.state.start ? 'nav hidden' : this.state.hidden ? 'nav slide-out-blurred-right4' : 'nav swing-in-right-fwd4'}>Resume</a>
             </div>
         )
     }

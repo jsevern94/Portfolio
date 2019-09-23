@@ -11,14 +11,17 @@ class FeaturedApps extends Component {
                 flexWrap: 'wrap',
                 marginTop: '30px',
                 marginBottom: '30px'
-            }
+            },
+            
+
+            
         }
         return (
-            <div>
-                < div style={{ marginTop: '30px', marginBottom: '30px', fontSize: '30px' }
+            <div style={{marginTop: '100px', marginBottom: '100px'}}>
+                <h3 style={{ marginBottom: '30px', fontSize: '30px', textAlign: 'center', margin: '0 auto', fontFamily: "'Nunito', sans-serif", backgroundColor: '#1a202c', padding: '1rem', borderRadius: '.5rem', width: '38%'}
                 }>
-                    Featured Apps
-                </div >
+                    Here are a few of the apps I've built.
+                </h3>
                 <div style={styles.cards}>
                     <ProjectCard title='J-CARD Brewing Solutions' image='/images/J-card.PNG' deployedLink='https://shielded-retreat-69523.herokuapp.com/inventory' code='https://github.com/jsevern94/CRM'>A CRM designed for breweries in an effort to make the task of handling data easier. Utility and user-friendliness are the primary goals here, so expect regular updates and improvements.</ProjectCard>
                     <ProjectCard title='Hello World' image='/images/hello-world.PNG' deployedLink='https://jsevern94.github.io/Hello-World/' code='https://github.com/jsevern94/Hello-World'>For travelers who want to take a vacation but have no idea where they want to go. Tell us your ideal temperature, vacation theme and month, and we'll give you suggestions.</ProjectCard>

@@ -3,6 +3,7 @@
     color: #fff;
     text-decoration: none;
     font-size: 20px;
+    width: 150px;
     background-color: #5a67d8;
     padding: 8px;
     padding-right: 35px;
@@ -81,7 +82,7 @@
 }
 
 .flip-card-inner.is-flipped {
-  transform: rotateY(-540deg);
+  transform: rotateY(-900deg);
 }
 
 .flip-card-front, .flip-card-back {

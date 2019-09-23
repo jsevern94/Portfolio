@@ -11,16 +11,16 @@ class AboutMe extends Component {
 
             },
             box: {
-                width: '57.5%',
-                color: '#e3e3e3',
+                width: '45%',
+                color: '#000000',
                 padding: '1.5rem',
-                opacity: '.75',
-                backgroundColor: '#1a202c',
+                backgroundColor: 'rgb(255,255,255)',
                 borderRadius: '.5rem',
-                marginTop: '30px'
+                marginTop: '30px',
+                fontFamily: "'Vollkorn SC', serif"
             },
             jonah: {
-                width: '75%',
+                width: '90%',
                 margin: '0 auto'
             },
             definition: {
@@ -41,16 +41,17 @@ class AboutMe extends Component {
         }
         return (
             <div>
-                < div style={{ marginTop: '30px', fontSize: '30px' }
+                < div style={{ marginTop: '100px', fontSize: '30px' }
                 }>
                 </div>
+                <h2 style={{width: '70%', textAlign: 'center', margin: '0 auto', marginBottom: '20px', fontFamily: "'Nunito', sans-serif", color: '#bbdefb'}}>Hi, I'm Jonah. If there were an entry for me in the dictionary, this is what you might find:</h2>
                 <div style={styles.content}>
                     <div style={styles.box}>
                         <div style={styles.jonah}>
-                        <p style={styles.p1}>jo·​nah ​se·vern | /ˈʤoʊnə ˈsɛvərn/</p>
+                        <p style={styles.p1}>jo·​nah ​sev·ern | /ˈʤoʊnə ˈsɛvərn/</p>
                         <div style={styles.definition}>
                             <p style={styles.p2}>proper noun:</p>
-                            <p style={styles.brandStatement}>1. a Full Stack Web Developer who specializes in UX/UI and loves structured and concise code.</p>
+                            <p style={styles.brandStatement}>1. a Full Stack Web Developer who loves building structured and concise code.</p>
                             <p style={styles.brandStatement}>2. one who enjoys finding new solutions to classic problems and improving upon outdated systems.</p>
                             </div>
                         </div>

@@ -7,7 +7,7 @@ html {
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
-  font-family: 'Vollkorn SC', serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .content {
@@ -21,15 +21,28 @@ html {
 }
 
 .section {
-  height: 100vh;
-  background-color: #e3e3e3;
+  height: auto;
+  padding: 10px 20px 10px 20px;
+  border-radius: .75rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #eeeeee;
+}
+
+.skills {
+  height: auto;
+  padding: 10px 20px 45px 20px;
+  border-radius: .75rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #eeeeee;
 }
 
 .featured-apps {
- color: #e3e3e3
+ color: #eeeeee
 }
 
 .home {
   height: 100vh;
-  background-color: #e3e3e3;
+  background-color: #1a202c;
 }
