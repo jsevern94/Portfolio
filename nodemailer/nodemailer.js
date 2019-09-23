@@ -4,13 +4,16 @@ var nodemailer = require('nodemailer');
 const creds = require('../config/keys');
 
 const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: false,
-    auth: {
-        user: creds.mailUser,
-        pass: creds.mailPass,
-    }
+  host: "smtp-mail.outlook.com",
+  secureConnection: false,
+  port: 587,
+  auth: {
+      user: "severnj@spu.edu",
+      pass: "c1o2t3t4"
+  },
+  tls: {
+      ciphers:'SSLv3'
+  }
 });
 
 transporter.verify((error, success) => {
