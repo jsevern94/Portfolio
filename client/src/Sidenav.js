@@ -23,7 +23,7 @@ class Sidenav extends Component {
                 display: 'flex',
                 flexWrap: 'wrap',
                 zIndex: 20,
-                width: '200px',
+                width: '130px',
                 fontSize: '1.5rem',
                 position: 'fixed',
                 top: 0,
