@@ -31,6 +31,7 @@ html {
 
 .skills {
   height: auto;
+  max-width: 72vw;
   padding: 10px 20px 45px 20px;
   border-radius: .75rem;
   margin-top: 50px;
