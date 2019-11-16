@@ -32,24 +32,21 @@ class ContactMe extends Component {
     }
 
     render() {
-        const styles = {
-
-        }
         return (
             <div>
                 <h2 style={{ width: '80%', textAlign: 'center', margin: '0 auto', marginBottom: '20px', fontFamily: "'Nunito', sans-serif", color: '#1a202c' }}>Send me a message if you'd like to get in touch</h2>
                 <div className='container'>
                     <form id="contact-form" onSubmit={this.handleSubmit} method="POST">
                         <div>
-                            <label for="name">Name</label>
+                            <label htmlFor="name">Name</label>
                             <input type="text" id="name" />
                         </div>
                         <div>
-                            <label for="exampleInputEmail1">Email address</label>
+                            <label htmlFor="exampleInputEmail1">Email address</label>
                             <input type="email" id="email" aria-describedby="emailHelp" />
                         </div>
                         <div>
-                            <label for="message">Message</label>
+                            <label htmlFor="message">Message</label>
                             <textarea type="text" rows="5" id="message"></textarea>
                         </div>
                         <button type="submit" style={{  backgroundColor: '#1a202c', border: 'none', borderRadius: '.5rem', color: 'white', padding: '1rem', textAlign: 'center', textDecoration: 'none'}}>Submit</button>
