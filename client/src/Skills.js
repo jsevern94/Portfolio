@@ -6,8 +6,7 @@ class Skills extends Component {
     render() {
         return (
             <div>
-                < h3 style={{ marginBottom: '30px', fontSize: '30px', color: '#bbdefb', textAlign: 'center', width: '80%', margin: '0 auto', fontFamily: "'Nunito', sans-serif" }
-                }>
+                < h3 className="skill-title">
                     Scroll through some of the languages and technologies that I have experience with.
                     </h3>
                 <div className="gallery js-flickity"

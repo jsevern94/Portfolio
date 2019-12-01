@@ -1,0 +1,18 @@
+.skill-card {
+    width: auto;
+    margin: 2.5rem;
+    text-align: left;
+}
+
+.skill-card-content {
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+    border-style: none;
+    border-radius: .5rem;
+    width: 280px;
+    height: 280px;
+    display: inline-flex;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
+}
