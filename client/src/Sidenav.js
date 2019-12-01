@@ -11,40 +11,16 @@ class Sidenav extends Component {
     handleClick = () => {
         this.setState({ hidden: !this.state.hidden, start: false })
     }
-    grow = () => {
-        this.setState({ svgColor: { color: 'red' } })
-    }
-    shrink = () => {
-        this.setState({ svgColor: { color: 'black' } })
-    }
     render() {
-        const styles = {
-            sidenav: {
-                display: 'flex',
-                flexWrap: 'wrap',
-                zIndex: 20,
-                width: '14vw',
-                fontSize: '1.5rem',
-                position: 'fixed',
-                top: 0,
-                right: 0,
-                paddingTop: '.75rem',
-                marginTop: '2rem',
-                marginRight: '1rem',
-                height: '85vh',
-                alignContent: 'space-between',
-                justifyContent: 'flex-end'
-            }
-        }
         return (
-            <div style={styles.sidenav}>
+            <div className='sidenav'>
                 <div className="flip-card">
                     <div className={this.state.hidden ? "flip-card-inner" : "flip-card-inner is-flipped"} onClick={this.handleClick}>
                         <div className="flip-card-front">
-                            <FontAwesomeIcon icon={faBars} size='2x' style={{color: '#bbdefb'}}/>
+                            <FontAwesomeIcon icon={faBars} size='2x' className="light-blue"/>
                         </div>
                         <div className="flip-card-back">
-                            <FontAwesomeIcon icon={faTimes} size='2x' style={{color: '#bbdefb'}}/>
+                            <FontAwesomeIcon icon={faTimes} size='2x' className="light-blue"/>
                         </div>
                     </div>
                 </div>
