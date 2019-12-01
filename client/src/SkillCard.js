@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './SkillCard.css';
 
 class SkillCard extends Component {
     render() {

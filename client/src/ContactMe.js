@@ -34,7 +34,7 @@ class ContactMe extends Component {
     render() {
         return (
             <div>
-                <h2 style={{ width: '80%', textAlign: 'center', margin: '0 auto', marginBottom: '20px', fontFamily: "'Nunito', sans-serif", color: '#1a202c' }}>Send me a message if you'd like to get in touch</h2>
+                <h2 className='header'>Send me a message if you'd like to get in touch</h2>
                 <div className='container'>
                     <form id="contact-form" onSubmit={this.handleSubmit} method="POST">
                         <div>
@@ -49,7 +49,7 @@ class ContactMe extends Component {
                             <label htmlFor="message">Message</label>
                             <textarea type="text" rows="5" id="message"></textarea>
                         </div>
-                        <button type="submit" style={{  backgroundColor: '#1a202c', border: 'none', borderRadius: '.5rem', color: 'white', padding: '1rem', textAlign: 'center', textDecoration: 'none'}}>Submit</button>
+                        <button type="submit" className="button">Submit</button>
                     </form>
                 </div>
             </div>

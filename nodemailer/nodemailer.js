@@ -1,14 +1,16 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+require('dotenv').config()
 
 const transporter = nodemailer.createTransport({
     host: 'chi-node15.websitehostserver.net',
     port: 465,
     secure: true,
     auth: {
+        type: 'login',
         user: "contact@jonahsevern.com",
-        pass: "C1o2t3t4!",
+        pass: process.env.PASS,
     },
 });
 

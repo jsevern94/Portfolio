@@ -9,7 +9,7 @@ import ContactMe from './ContactMe';
 function App() {
   return (
     <div className="App">
-      <div className="content">
+      <div className="everything">
         <Sidenav />
         <div className="home">
           <AboutMe />

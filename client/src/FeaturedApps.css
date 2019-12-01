@@ -1,0 +1,23 @@
+.featured-apps-content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.title2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+    background-color: #1a202c;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 44%;
+}
+.cards {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

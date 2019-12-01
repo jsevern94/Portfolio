@@ -9,7 +9,7 @@ html {
   font-family: 'Nunito', sans-serif;
 }
 
-.content {
+.everything {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
